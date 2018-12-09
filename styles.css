@@ -228,6 +228,7 @@ footer #copyright p {
 		right: 0;
 		display:block;
 		overflow: hidden;
+		z-index: 100;
 	}
 	#nav ul {
 		padding: 10px;
