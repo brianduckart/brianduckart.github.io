@@ -121,17 +121,56 @@ button.hide {
 	display: none;
 }
 
+.banner {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 0;
+    margin-bottom: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#home-banner {
+	background-image: url(images/banner-home.jpg);
+}
+
+#work-banner {
+	background-image: url(images/banner-work.jpg);
+}
+
+#contact-banner {
+	background-image: url(images/banner-contact.jpg);
+}
+
+.title {
+	font-size: 34px;
+	line-height: 34px;
+	text-align: left;
+	color: #000000;
+	margin: 0 0 0 0;
+	padding: 0 0 10px 0;
+	text-transform: uppercase;
+}
+
+.banner .title {
+	font-size: 50px;
+	line-height: 50px;
+	color: #FFFFFF;
+	margin: 0 0 0 20px;
+	padding: 400px 0 0 0;
+	text-transform: uppercase;
+}
+
 .content {
 	padding: 20px;
 }
 
-.title {
-	font-size: 50px;
-	line-height: 50px;
-	color: #FFFFFF;
-	margin: -64px 0 0 0;
-	padding: 0 0 15px 0;
-	text-transform: uppercase;
+.lr_embed {
+	margin: 10px 0 20px 0;
+	-webkit-overflow-scrolling: touch;
 }
 
 footer {
@@ -139,11 +178,37 @@ footer {
 	color: #FFFFFF;
 }
 
+footer .content {
+	display: flex;
+	justify-content: center;
+    align-items: flex-end;
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+footer #social {
+	display: inline;
+}
+
+footer #social img {
+	width: 30px;
+	display: inline;
+	border: solid 2px #bbbbbb;
+	padding: 4px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+
+footer #social img:hover {
+	border: solid 2px #18daec;
+}
+
 footer #copyright p {
 	text-align: center;
 	font-size: 13px;
 	line-height: 1em;
-	padding: 20px;
+	padding: 12px;
 }
 
 /* Smaller Screens */
@@ -173,6 +238,12 @@ footer #copyright p {
 @media only screen and (min-width: 901px) {
 	#hamburger { display:none; }
 	#close { display:none; }
+}
+
+@media only screen and (max-width: 600px) {
+	.banner .title {
+		padding: 200px 0 0 0;
+	}
 }
 
 /* Rules for sizing the icon. */
