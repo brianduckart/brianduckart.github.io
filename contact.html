@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Brian Duckart Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A portfolio of Brian Duckart's work.">
+<meta name="keywords" content="web designer, web developer, portfolio">
+<meta name="author" content="Brian Duckart">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<style>
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}	
+</style>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+	<div class="container">
+	<div id="name"><a href="index.html">Brian Duckart</a> &nbsp; <small>Web Designer, Developer &amp; Photographer</small></div>
+	<button id="hamburger" title="Menu"><i class="material-icons md-36">&#xE5D2;</i></button>
+	<button id="close" title="Close" class="hide"><i class="material-icons md-36">close</i></button>
+	<nav id="nav">
+		<ul>
+			<li><a href="work.html">Work</a></li>
+			<li><a href="photo.html">Photography</a></li>
+			<li><a href="#" class="active">Contact</a></li>
+		</ul>
+	</nav>
+	</div>
+</header>
+<main>
+	<div class="container">
+	<section id="contact">
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeO_pnZuNQk4W7_AmJRnzCehH37DVWgOpxxDxW2wJEff1bNlg/viewform" seamless></iframe>
+	</section>
+	</div>
+</main>
+<footer>
+	<div class="content">
+	<div id="copyright"><p>&copy;2018 Brian Duckart</p></div>
+	<div id="social">
+		<a href="https://www.facebook.com/brianduckart" target="_blank"><img src="images/social_transparent_fb.png" alt="Facebook" /></a>
+		<a href="https://twitter.com/brianduckart" target="_blank"><img src="images/social_transparent_tw.png" alt="Twitter" /></a>
+		<a href="https://www.instagram.com/brduck/" target="_blank"><img src="images/social_transparent_ig.png" alt="Instagram" /></a>
+	</div>
+	</div>
+</footer>
+<script> 
+$(document).ready(function(){
+  $("#hamburger").click(function(){
+            $("#nav").animate({
+                width: "toggle"
+            });
+	$("#hamburger").toggleClass("hide");
+	$( "#close" ).toggleClass("hide");
+  });
+  $("#close").click(function(){
+            $("#nav").animate({
+                width: "toggle"
+            });
+	$("#close").toggleClass("hide");
+	$( "#hamburger" ).toggleClass("hide");
+  });
+});
+</script>
+</body>
+</html>
