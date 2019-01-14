@@ -258,6 +258,9 @@ footer #copyright p {
 		padding: 10px;
 	}
 	#nav { display:none; }
+	nav li a {
+    	color: #333333;
+    }
 }
 
 @media only screen and (min-width: 901px) {
