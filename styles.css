@@ -197,6 +197,21 @@ button.hide {
 	padding: 20px;
 }
 
+#projects {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: auto;
+  padding: 20px 0 10px 0;
+}
+
+.project-tile {
+  width: 200px;  /* Or whatever */
+  height: 200px; /* Or whatever */
+  margin: auto;
+  padding: 10px;
+}
+
 footer {
 	background-color: #333333;
 	color: #FFFFFF;
